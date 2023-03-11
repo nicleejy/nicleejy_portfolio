@@ -130,7 +130,7 @@ const NavBar: FunctionComponent<{
               initial={{ x: "100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: "100%", opacity: 0 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               className="lg:invisible absolute top-0 left-0 flex justify-center items-center w-full px-5 bg-white dark:bg-main h-[100vh] transition-colors duration-500"
             >
               <ul className="flex w-[100%]  flex-col items-center text-xl font-semibold gap-11 font-inconsolata">

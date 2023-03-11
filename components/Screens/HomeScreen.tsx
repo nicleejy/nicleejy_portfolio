@@ -12,7 +12,7 @@ export const HomeScreen = () => {
       <div>
         <div className="background">
           <div className="container">
-            <div className="bubbles">{generateBubbles(5)}</div>
+            <div className="bubbles">{generateBubbles(4)}</div>
           </div>
         </div>
       </div>

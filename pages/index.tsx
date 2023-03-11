@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         >
           <HiChevronDoubleDown
             size={30}
-            className="absolute bottom-[6%] w-full z-10 animate-bounce dark:text-primary text-secondaryDark"
+            className="hidden md:block absolute bottom-[6%] w-full z-10 animate-bounce dark:text-primary text-secondaryDark"
           />
         </Link>
 
