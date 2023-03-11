@@ -16,7 +16,7 @@ const NavItem: FunctionComponent<{
       spy={true}
       smooth={true}
       offset={offset}
-      duration={500}
+      duration={1000}
     >
       <li
         className={`${

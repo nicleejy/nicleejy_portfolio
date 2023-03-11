@@ -66,7 +66,7 @@ export const HomeScreen = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={500}
+            duration={1000}
           >
             <BlueButton onClick={() => ""}>View Projects</BlueButton>
           </Link>
