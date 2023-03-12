@@ -12,6 +12,8 @@ import { ThemeProvider } from "../animations/themeContext";
 import { FooterScreen } from "../components/Screens/FooterScreen";
 import { HiChevronDoubleDown } from "react-icons/hi";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
+import { fadeInUp } from "../animations/animations";
 
 const Home: NextPage = () => {
   return (
@@ -20,20 +22,21 @@ const Home: NextPage = () => {
         <div className="hidden sm:block">
           <WebSocialLinks />
         </div>
-
-        <Link
-          className="cursor-pointer"
-          to={"about"}
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <HiChevronDoubleDown
-            size={30}
-            className="hidden md:block absolute bottom-[6%] w-full z-10 animate-bounce dark:text-primary text-secondaryDark"
-          />
-        </Link>
+        <motion.div initial="initial" animate="animate" variants={fadeInUp}>
+          <Link
+            className="cursor-pointer"
+            to={"about"}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            <HiChevronDoubleDown
+              size={30}
+              className="hidden md:block absolute bottom-[6%] w-full z-10 animate-bounce dark:text-primary text-secondaryDark"
+            />
+          </Link>
+        </motion.div>
 
         <NavBar navigationContent={navContents} />
         <HomeScreen />

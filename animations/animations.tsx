@@ -40,7 +40,7 @@ export const fadeInLeft = {
     x: 0,
     transition: {
       ease: "easeInOut",
-      duration: 0.7,
+      duration: 0.4,
     },
   },
 };
@@ -65,6 +65,21 @@ export const stagger = {
   animate: {
     transition: {
       staggerChildren: 0.3,
+    },
+  },
+};
+
+export const fadeInLeftDelay = {
+  initial: {
+    opacity: 0,
+    x: -60,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 1,
     },
   },
 };

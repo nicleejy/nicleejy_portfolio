@@ -6,14 +6,14 @@ module.exports = {
 		extend: {
 			colors: {
 				primary: "#FFFFFF",
-				secondary: "#B5B9E2",
-				accent: "#5F5AFF",
+				secondary: "#C7CAEE",
+				accent: "#6424F3",
 				gradientLeft: "#5920E1",
 				gradientRight: "#F62E5A",
-				tertiary: "#140535",
+				tertiary: "#150636",
 				main: "#13012C",
 				accent2: "#5A5F95",
-				primaryDark: "#38393D",
+				primaryDark: "#2F3033",
 				secondaryDark: "#76767A",
 			},
 			fontFamily: {

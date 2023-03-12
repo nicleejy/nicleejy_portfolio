@@ -4,7 +4,8 @@ import MobileSocialLinks from "../Socials/MobileSocialLinks";
 import Section from "../Utilities/Section";
 import BlueButton from "../Utilities/BlueButton";
 import { Link } from "react-scroll";
-import { generateBubbles } from "../../animations/animations";
+import { fadeInLeftDelay, generateBubbles } from "../../animations/animations";
+import { motion } from "framer-motion";
 
 export const HomeScreen = () => {
   const BubbleBackground = () => {
@@ -24,15 +25,20 @@ export const HomeScreen = () => {
       <BubbleBackground />
       <Section
         id="home"
-        className="flex items-center justify-center min-h-screen"
+        className="flex items-center justify-center min-h-fit h-screen"
       >
         <div className="flex flex-col justify-center w-[750px] z-10">
           <h3 className="text-lg font-semibold font-inconsolata dark:text-primary text-primaryDark">
             Nice to meet you! I am
           </h3>
-          <h1 className="mt-6 text-6xl font-bold text-transparent md:text-7xl font-poppins bg-clip-text bg-gradient-to-r from-gradientLeft to-gradientRight">
+          <motion.h1
+            variants={fadeInLeftDelay}
+            initial="initial"
+            animate="animate"
+            className="mt-6 text-6xl font-bold text-transparent md:text-7xl font-poppins bg-clip-text bg-gradient-to-r from-gradientLeft to-gradientRight"
+          >
             Nicholas Lee.
-          </h1>
+          </motion.h1>
 
           <TypeAnimation
             className="mt-2 text-lg font-bold text-primaryDark md:text-4xl dark:text-primary"

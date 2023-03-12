@@ -20,7 +20,7 @@ export const FooterScreen = () => {
         {theme === "dark" ? (
           <Image
             src="/nl.png"
-            className="transition-all hover:scale-110"
+            className="transition-all hover:scale-110 animate-bounce"
             alt="logo"
             width={80}
             height={80}
@@ -28,16 +28,22 @@ export const FooterScreen = () => {
         ) : (
           <Image
             src="/nldark.png"
-            className="mb-6 transition-all rounded-2xl hover:scale-110 animate-pulse"
+            className="mb-6 transition-all rounded-2xl hover:scale-110 animate-bounce"
             alt="logo"
             width={50}
             height={50}
           />
         )}
       </Link>
-      <p className="text-sm dark:text-secondary text-secondaryDark font-inconsolata">
+
+      <a
+        href={"https://github.com/nicleejy/nicleejy_portfolio"}
+        target="_blank"
+        rel="noreferrer"
+        className="text-sm dark:text-secondary text-secondaryDark  hover:text-accent dark:hover:text-accent font-inconsolata"
+      >
         Designed and built by Nicholas Lee
-      </p>
+      </a>
       <SkillRow
         className="mt-6"
         skillNames={["next", "typescript", "tailwind", "react"]}

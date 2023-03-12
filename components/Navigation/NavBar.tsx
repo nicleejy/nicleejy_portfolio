@@ -29,6 +29,20 @@ const NavBar: FunctionComponent<{
     setDarkMode(isDarkMode);
   };
 
+  const toggleNavBar = (isOpen: boolean) => {
+    if (isOpen) {
+      document.body.classList.add(`overflow-hidden`);
+    }
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isOpen]);
+
   useEffect(() => {
     var prev = window.scrollY;
     const handleNavigation = (e: Event) => {

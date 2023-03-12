@@ -102,7 +102,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
       )}
 
       <div
-        className="relative px-6 py-10 mt-8 mb-24 md:mt-14 shadow-lg dark:border dark:border-secondary rounded-xl min-w-[100px] max-w-[630px] cursor-pointer dark:border-opacity-20"
+        className="relative px-6 py-10 mt-8 mb-24 md:mt-14 shadow-lg  dark:bg-tertiary rounded-xl md:w-[630px] cursor-pointer"
         onClick={handleClickProject}
       >
         <div className="flex flex-col items-center">
