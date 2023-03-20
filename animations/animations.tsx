@@ -18,37 +18,7 @@ export const generateBubbles = (numBubbles: number) => {
 export const fadeInUp = {
   initial: {
     opacity: 0,
-    y: 50,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      ease: "easeInOut",
-      duration: 0.8,
-    },
-  },
-};
-
-export const fadeInLeft = {
-  initial: {
-    opacity: 0,
-    x: -100,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      ease: "easeInOut",
-      duration: 0.4,
-    },
-  },
-};
-
-export const fadeInUpNoDelay = {
-  initial: {
-    opacity: 0,
-    y: 60,
+    y: 30,
   },
   animate: {
     opacity: 1,
@@ -56,6 +26,36 @@ export const fadeInUpNoDelay = {
     transition: {
       ease: "easeInOut",
       duration: 0.5,
+    },
+  },
+};
+
+export const fadeInLeft = {
+  initial: {
+    opacity: 0,
+    x: -80,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.7,
+    },
+  },
+};
+
+export const fadeInUpNoDelay = {
+  initial: {
+    opacity: 0,
+    y: 30,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      ease: "easeInOut",
+      duration: 0.6,
     },
   },
 };
@@ -72,7 +72,7 @@ export const stagger = {
 export const fadeInLeftDelay = {
   initial: {
     opacity: 0,
-    x: -60,
+    x: -40,
   },
   animate: {
     opacity: 1,

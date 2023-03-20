@@ -24,7 +24,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: OtherProject }> = ({
 
   return (
     <div
-      className="flex flex-col h-[520px] md:h-[500px] w-full md:w-[400px] grid-item bg-white shadow-lg dark:shadow-none dark:bg-tertiary rounded-xl overflow-hidden group/card hover:-translate-y-2 duration-200 transition-all cursor-pointer"
+      className="flex flex-col h-[520px] md:h-[500px] w-full md:w-[400px] grid-item bg-white shadow-lg dark:shadow-none dark:bg-tertiary rounded-xl overflow-hidden hover:-translate-y-2 duration-200 transition-all cursor-pointer"
       onClick={handleClick}
     >
       <Image
@@ -35,7 +35,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: OtherProject }> = ({
         width={300}
       />
       <div className="h-[320px] md:h-[300px] flex flex-col justify-between px-8 py-10">
-        <h1 className="mb-4 text-xl font-bold text-primaryDark dark:text-primary transition-all duration-300 group-hover/card:text-accent ">
+        <h1 className="mb-4 text-xl font-bold text-primaryDark dark:text-primary transition-all duration-300">
           {name}
         </h1>
         <p className="text-xs leading-7 text-secondaryDark dark:text-secondary">

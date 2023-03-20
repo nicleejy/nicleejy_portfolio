@@ -22,12 +22,9 @@ export const HomeScreen = () => {
   return (
     <div>
       <BubbleBackground />
-      <Section
-        id="home"
-        className="flex items-center justify-center min-h-fit h-screen"
-      >
+      <Section id="home" className="flex items-center justify-center h-screen">
         <div className="flex flex-col justify-center w-[750px] z-10">
-          <h3 className="text-sm md:text-lg font-semibold font-inconsolata dark:text-primary text-primaryDark">
+          <h3 className="text-xs md:text-lg font-semibold font-inconsolata dark:text-primary text-primaryDark md:mt-0 mt-14">
             Nice to meet you! I am
           </h3>
           <h1 className="mt-6 text-4xl font-bold text-transparent md:text-7xl font-poppins bg-clip-text bg-gradient-to-r from-gradientLeft to-gradientRight">
@@ -53,7 +50,7 @@ export const HomeScreen = () => {
             repeat={Infinity}
           />
 
-          <p className="mt-12 text-sm font-normal leading-8 text-secondaryDark dark:text-secondary">
+          <p className="mt-12 text-xs md:text-sm font-normal leading-8 md:leading-8 text-secondaryDark dark:text-secondary">
             I am a computer science student at the National University of
             Singapore, pursuing my interest in full-stack web and mobile
             development. My passion lies in utilizing technology to not only

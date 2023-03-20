@@ -7,7 +7,7 @@ import { FaMedal } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeInLeft } from "../../animations/animations";
-import Image from "next/image"
+import Image from "next/image";
 
 const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
   project: {
@@ -36,15 +36,15 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
     mode: "scroll",
     actions: [
       {
-        visibility: [0.25, 0.7],
+        visibility: [0.2, 0.7],
         type: "seek",
-        frames: [0, 45],
+        frames: [0, 14],
       },
     ],
   });
 
   const framerAnimation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 0.4 });
+  const [ref, inView, entry] = useInView({ threshold: 0.5 });
 
   useEffect(() => {
     if (inView) {
@@ -115,12 +115,12 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
             {Animation}
           </div>
           <Image
-						className="my-10 lg:hidden"
-						alt={name}
-						src={imagePath}
-						height={300}
-						width={500}
-					/>
+            className="my-10 lg:hidden"
+            alt={name}
+            src={imagePath}
+            height={300}
+            width={500}
+          />
         </div>
         <div className="flex justify-between mt-12">
           <SkillRow skillNames={technologies} />

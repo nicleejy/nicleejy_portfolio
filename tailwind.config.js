@@ -11,7 +11,7 @@ module.exports = {
 				gradientLeft: "#5920E1",
 				gradientRight: "#F62E5A",
 				tertiary: "#150636",
-				main: "#13012C",
+				main: "#110125",
 				accent2: "#E4009C",
 				primaryDark: "#2F3033",
 				secondaryDark: "#76767A",

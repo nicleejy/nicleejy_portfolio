@@ -35,7 +35,7 @@ export const navContents: NavContent[] = [
   { name: "./about", offset: 0, id: "about" },
   { name: "./experience", offset: -20, id: "experience" },
   { name: "./projects", offset: 0, id: "projects" },
-  // { name: "./contact", offset: 0, id: "contact" },
+  { name: "./contact", offset: 0, id: "contact" },
 ];
 
 export const projects: Project[] = [

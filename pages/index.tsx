@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             offset={0}
             duration={1000}
           >
-            <div className="hidden md:flex justify-center items-center absolute bottom-0 h-[10vh] w-full z-10">
+            <div className="hidden lg:flex justify-center items-center absolute bottom-0 h-[10vh] w-full z-10">
               <HiChevronDoubleDown
                 size={30}
                 className="dark:text-primary text-secondaryDark animate-bounce"

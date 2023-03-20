@@ -20,7 +20,7 @@ export const FooterScreen = () => {
         {theme === "dark" ? (
           <Image
             src="/nl.png"
-            className="transition-all hover:scale-110 animate-bounce"
+            className="transition-all hover:scale-110"
             alt="logo"
             width={80}
             height={80}
@@ -28,7 +28,7 @@ export const FooterScreen = () => {
         ) : (
           <Image
             src="/nldark.png"
-            className="mb-6 transition-all rounded-2xl hover:scale-110 animate-bounce"
+            className="mb-6 transition-all rounded-2xl hover:scale-110"
             alt="logo"
             width={50}
             height={50}
@@ -40,7 +40,7 @@ export const FooterScreen = () => {
         href={"https://github.com/nicleejy/nicleejy_portfolio"}
         target="_blank"
         rel="noreferrer"
-        className="text-sm dark:text-secondary text-secondaryDark  hover:text-accent dark:hover:text-accent font-inconsolata"
+        className="text-sm dark:text-secondary text-secondaryDark  hover:text-accent dark:hover:text-accent font-inconsolata hover:scale-105 transition-all"
       >
         Designed and built by Nicholas Lee
       </a>
