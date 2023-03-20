@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <div className="hidden sm:block">
           <WebSocialLinks />
         </div>
-        <motion.div initial="initial" animate="animate" variants={fadeInUp}>
+        <div>
           <Link
             className="cursor-pointer"
             to={"about"}
@@ -31,12 +31,14 @@ const Home: NextPage = () => {
             offset={0}
             duration={1000}
           >
-            <HiChevronDoubleDown
-              size={30}
-              className="hidden md:block absolute bottom-[6%] w-full z-10 animate-bounce dark:text-primary text-secondaryDark"
-            />
+            <div className="hidden md:flex justify-center items-center absolute bottom-0 h-[10vh] w-full z-10">
+              <HiChevronDoubleDown
+                size={30}
+                className="dark:text-primary text-secondaryDark animate-bounce"
+              />
+            </div>
           </Link>
-        </motion.div>
+        </div>
 
         <NavBar navigationContent={navContents} />
         <HomeScreen />

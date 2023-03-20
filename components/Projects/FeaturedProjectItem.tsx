@@ -7,6 +7,7 @@ import { FaMedal } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeInLeft } from "../../animations/animations";
+import Image from "next/image"
 
 const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
   project: {
@@ -102,7 +103,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
       )}
 
       <div
-        className="relative px-6 py-10 mt-8 mb-24 md:mt-14 shadow-lg  dark:bg-tertiary rounded-xl md:w-[630px] cursor-pointer"
+        className="relative px-6 py-10 mt-8 mb-24 md:mt-14 shadow-lg dark:bg-tertiary rounded-xl md:w-[630px] cursor-pointer"
         onClick={handleClickProject}
       >
         <div className="flex flex-col items-center">
@@ -110,16 +111,16 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
             {description}
           </p>
 
-          <div className="block lg:absolute lg:block lg:-right-1/2 lg:-top-44 lg:left-auto lg:bottom-auto">
+          <div className="hidden lg:absolute lg:block lg:-right-1/2 lg:-top-44 lg:left-auto lg:bottom-auto">
             {Animation}
           </div>
-          {/* <Image
-						className="my-10 md:hidden"
+          <Image
+						className="my-10 lg:hidden"
 						alt={name}
 						src={imagePath}
 						height={300}
 						width={500}
-					/> */}
+					/>
         </div>
         <div className="flex justify-between mt-12">
           <SkillRow skillNames={technologies} />

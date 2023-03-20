@@ -29,12 +29,12 @@ const ExperienceItem: FunctionComponent<{ experience: Experience }> = ({
               className="object-contain"
               src={imageSource}
               alt={title}
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
 
             <div className="ml-5">
-              <h3 className="flex items-center mb-1 text-xl font-bold text-primaryDark dark:text-primary group-hover:text-accent transition-all duration-300">
+              <h3 className="flex items-center mb-1 text-xl font-bold text-primaryDark dark:text-primary group-hover:text-accent dark:group-hover:animate-glow transition-all duration-300">
                 {title}
               </h3>
               <time className="block mt-2 text-lg leading-none font-inconsolata text-secondaryDark dark:text-secondary">

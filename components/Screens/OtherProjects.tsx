@@ -15,7 +15,7 @@ export const OtherProjects = () => {
         <h1 className=" text-3xl font-bold font-poppins dark:text-primary text-primaryDark">
           Other Creations
         </h1>
-        <h3 className="mb-20 mt-2 text-md leading-none font-inconsolata text-accent">
+        <h3 className="mb-20 mt-2 text-md leading-none font-inconsolata dark:text-secondary">
           More projects I&apos;ve worked on
         </h3>
 

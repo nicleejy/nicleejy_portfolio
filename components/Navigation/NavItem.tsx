@@ -16,14 +16,14 @@ const NavItem: FunctionComponent<{
       spy={true}
       smooth={true}
       offset={offset}
-      duration={1000}
+      duration={1200}
     >
       <li
         className={`${
           activeItem == name
-            ? "text-accent"
+            ? "text-accent2"
             : "text-primaryDark dark:text-primary"
-        }  hover:text-accent dark:hover:text-accent hover:scale-110 transition-all `}
+        }  hover:text-accent2 dark:hover:text-accent2 hover:scale-110 transition-all `}
         onClick={() => {
           setActiveItem(name);
           onClick();

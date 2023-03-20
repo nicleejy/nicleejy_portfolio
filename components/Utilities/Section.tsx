@@ -25,7 +25,7 @@ const Section: FC<Props> = ({ children, id, className }) => {
 			{...getVariants()}
 			viewport={{ once: true }}
 			id={id}
-			className={`${className} px-6 sm:px-28 w-full py-24 `}
+			className={`${className} px-10 sm:px-28 w-full py-24 `}
 		>
 			{children}
 		</motion.section>

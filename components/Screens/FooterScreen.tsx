@@ -15,7 +15,7 @@ export const FooterScreen = () => {
         spy={true}
         smooth={true}
         offset={5}
-        duration={1000}
+        duration={1500}
       >
         {theme === "dark" ? (
           <Image

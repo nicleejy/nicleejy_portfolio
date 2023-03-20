@@ -73,7 +73,7 @@ const NavBar: FunctionComponent<{
         open: { opacity: 1, y: 0 },
         closed: { opacity: 0, y: "-100%" },
       }}
-      className="fixed flex bg-white dark:bg-main  h-[10vh] items-center w-full z-40 transition-colors duration-500"
+      className="fixed flex bg-white dark:bg-main h-[10vh] items-center w-full z-40 transition-colors duration-500"
     >
       {/* Web Navbar */}
       <nav className="flex items-center justify-between w-[100%] mx-4">
@@ -83,7 +83,7 @@ const NavBar: FunctionComponent<{
           spy={true}
           smooth={true}
           offset={5}
-          duration={1000}
+          duration={1200}
         >
           {theme === "dark" ? (
             <Image src="/nl.png" alt="logo" width={50} height={50} />
