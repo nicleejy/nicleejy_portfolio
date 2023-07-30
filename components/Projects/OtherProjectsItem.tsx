@@ -14,19 +14,8 @@ const FeaturedProjectItem: FunctionComponent<{ project: OtherProject }> = ({
     imagePath,
   },
 }) => {
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if (projectLink != null) {
-      window.open(projectLink, "_blank");
-    } else {
-      window.open(githubLink, "_blank");
-    }
-  };
-
   return (
-    <div
-      className="flex flex-col h-[520px] md:h-[500px] w-full md:w-[400px] grid-item bg-white shadow-lg dark:shadow-none dark:bg-tertiary rounded-xl overflow-hidden hover:-translate-y-2 duration-200 transition-all cursor-pointer"
-      onClick={handleClick}
-    >
+    <div className="flex flex-col h-[520px] md:h-[500px] w-full md:w-[400px] grid-item bg-white shadow-lg dark:shadow-none dark:bg-tertiary rounded-xl overflow-hidden hover:-translate-y-2 duration-200 transition-all ">
       <Image
         className="h-[200px] w-full md:w-[400px] object-cover "
         src={imagePath}

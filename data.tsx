@@ -25,6 +25,9 @@ import {
   SiTensorflow,
   SiJunit5,
   SiGradle,
+  SiRedux,
+  SiDocker,
+  SiMui,
 } from "react-icons/si";
 
 import singaScript from "./public/singascript.json";
@@ -141,6 +144,27 @@ export const otherProjects: OtherProject[] = [
 
 export const experiences: Experience[] = [
   {
+    title: "AI Engineer Intern @ Hyundai Motor Group (HMGICS)",
+    duration: "May 2023 - August 2023",
+    imageSource: "/hmgics.png",
+    contributions: [
+      "Architected a computer vision (CV) data visualisation dashboard for use in Hyundai's AI Research centre using MERN stack (MongoDB, Express.js, React.js, Node.js), handling entire lifecycle from wireframing, use case study, UI design to full-stack development",
+      "Developed a custom Python package for efficient data logging, utilising real-time communication with websockets for instant updates",
+      "Implemented backend using microservices and Clean Architecture principles, allowing seamless integration across various CV/ML applications",
+      "Containerised and deployed application with Docker, utilising a Kubernetes-based infrastructure for streamlined deployment",
+    ],
+    skillsList: [
+      "next",
+      "react",
+      "express",
+      "typescript",
+      "mongo",
+      "docker",
+      "mui",
+    ],
+    website: "https://www.hyundai.com/sg/home",
+  },
+  {
     title: "Software Engineer @ NUS Fintech Society",
     duration: "August 2022 - Present",
     imageSource: "/nus-fintech-society.png",
@@ -206,4 +230,7 @@ export const skills: { [key: string]: Skill } = {
   tensor: { name: "TensorFlow", Icon: SiTensorflow },
   junit: { name: "JUnit5", Icon: SiJunit5 },
   gradle: { name: "Gradle", Icon: SiGradle },
+  redux: { name: "Redux", Icon: SiRedux },
+  docker: { name: "Docker", Icon: SiDocker },
+  mui: { name: "Material UI", Icon: SiMui },
 };
