@@ -11,7 +11,7 @@ export const AboutScreen = () => {
     >
       <div className="w-[750px]">
         <Header chapter="01" title="About Me" />
-        <p className="text-sm font-normal leading-8 text-secondaryDark dark:text-secondary">
+        <p className="text-xs font-normal leading-8 text-secondaryDark dark:text-secondary">
           I&apos;m an aspiring software engineer with a strong passion for
           developing clean, effective technical solutions that make a positive
           impact. I&apos;m fascinated by optimisation problems, predictive
@@ -19,7 +19,7 @@ export const AboutScreen = () => {
           <br></br>
         </p>
         <div className="flex flex-col items-center lg:flex-row">
-          <p className="text-sm font-normal leading-8 text-secondaryDark dark:text-secondary">
+          <p className="text-xs font-normal leading-8 text-secondaryDark dark:text-secondary">
             <br></br>I thrive in fast-paced and collaborative team environments,
             bringing a keen eye for detail to every project I work on.
             Currently, I am expanding my skillsets by exploring web development

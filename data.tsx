@@ -134,7 +134,7 @@ export const otherProjects: OtherProject[] = [
   {
     name: "Don't Forget Ah!",
     description:
-      "Singaporean-style bot which schedule appointments from text using natural language. Employs Python NLTK and NLP techniques such as tokenization, Part-Of-Speech tagging for precise text analysis.",
+      "Bot which schedules appointments from text using natural language. Employs Python NLTK and NLP techniques such as tokenization, Part-Of-Speech tagging for precise text analysis.",
     githubLink: "https://github.com/nicleejy/DontForgetAh-Bot",
     projectLink: "https://telegram.me/DontForgetAhBot",
     technologies: ["python"],
@@ -144,14 +144,28 @@ export const otherProjects: OtherProject[] = [
 
 export const experiences: Experience[] = [
   {
-    title: "AI Engineer Intern @ Hyundai Motor Group (HMGICS)",
+    title: "Product Management Intern",
+    duration: "September 2023 - November 2023",
+    company: "Shopee",
+    imageSource: "/shopee.png",
+    contributions: [
+      "Led development of an AI-based product solution leveraging computer vision models to identify and remove violating items on the Shopee platform as part of the Listing QC team",
+      "Collaborated with cross-functional teams, including Regional Ops, UI/UX Designers, Software Engineers, and Data Scientists to enhance consumer satisfaction and platform cleanliness",
+      "Presented PRD during multiple reviews, articulating launch roadmap, technical specs and performance metrics to stakeholders",
+    ],
+    skillsList: [],
+    website: "https://shopee.sg/",
+  },
+  {
+    title: "Software Engineer Intern",
     duration: "May 2023 - August 2023",
+    company: "Hyundai Motor Group (HMGICS)",
     imageSource: "/hmgics.png",
     contributions: [
-      "Architected a computer vision (CV) data visualisation dashboard for use in Hyundai's AI Research centre using MERN stack (MongoDB, Express.js, React.js, Node.js), handling entire lifecycle from wireframing, use case study, UI design to full-stack development",
-      "Developed a custom Python package for efficient data logging, utilising real-time communication with websockets for instant updates",
-      "Implemented backend using microservices and Clean Architecture principles, allowing seamless integration across various CV/ML applications",
-      "Containerised and deployed application with Docker, utilising a Kubernetes-based infrastructure for streamlined deployment",
+      "Developed a MERN stack-based computer vision data visualisation tool for Hyundai's AI Research centre, covering wireframing, UI design, and full-stack implementation with Redux and Typescript, utilising Docker for containerization and streamlined deployment on Kubernetes-based infrastructure",
+      "Designed a microservices architecture following Clean Architecture principles for easy integration across CV/ML applications",
+      "Achieved sub-100ms API response time, reducing data latency by 80% through server-side seg-mask decoding with LRU cache",
+      "Conducted research on WINClip applications, including zero-shot anomaly detection in manufacturing of the Ioniq 5 Electric Vehicle",
     ],
     skillsList: [
       "next",
@@ -165,31 +179,22 @@ export const experiences: Experience[] = [
     website: "https://www.hyundai.com/sg/home",
   },
   {
-    title: "Software Engineer @ NUS Fintech Society",
-    duration: "August 2022 - Present",
-    imageSource: "/nus-fintech-society.png",
-    contributions: [
-      "Collaborated with a team of student software engineers to develop NUS Fintech Month hackathon web application with React JS, Typescript and Chakra UI",
-      "Utilised Next JS for server-side rendering for optimised performance and SEO",
-    ],
-    skillsList: ["next", "react", "typescript", "chakra"],
-    website: "https://fintechsociety.comp.nus.edu.sg/",
-  },
-  {
-    title: "Software Engineer Intern @ Quest",
+    title: "Software Engineer Intern",
+    company: "Quest, Hire a Hero",
     duration: "May 2022 - August 2022",
     imageSource: "/quest.png",
     contributions: [
-      "Performed application-wide database migration from Cloud Firestore to PostgreSQL using GraphQL",
-      "Implemented BLoC stream-based state management system for user analytics feature",
-      "Collaborated with software team in Agile development environment with daily standups, sprint retrospectives and code reviews",
+      "Developed mobile interfaces using Flutter SDK with Dart, integrating features such as user profile and hero earning analytics",
+      "Migrated app database from Cloud Firestore to PostgreSQL with Hasura and GraphQL by mapping complex data relationships, resulting in 60% reduction in query response time",
+      "Implemented robust stream-based state management system utilising Business Logic Component (BLoC) to ensure code maintainability and scalability",
     ],
     skillsList: ["flutter", "firebase", "hasura", "graphql", "postgresql"],
     website: "https://quest-inc.co",
   },
   {
-    title: "Digital Content Creator @ Advocado Films",
+    title: "Freelance Videographer",
     duration: "January 2016 - Present",
+    company: "Advocado Films",
     imageSource: "/advocado.png",
     contributions: [
       "Co-founded a Singapore-based media production team specialised in providing affordable advertising to startups and SMEs",

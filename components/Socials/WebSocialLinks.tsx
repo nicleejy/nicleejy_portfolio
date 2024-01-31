@@ -21,7 +21,7 @@ const WebSocialLinks = () => {
         ease: "easeInOut",
         duration: 0.8,
       }}
-      className="fixed flex flex-col gap-8 ml-8 top-[50%] z-20"
+      className="fixed flex flex-col gap-8 ml-12 top-[50%] z-20"
     >
       <a
         href="https://www.instagram.com/leesvisuals/?hl=en"

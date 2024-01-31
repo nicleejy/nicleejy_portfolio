@@ -8,6 +8,7 @@ export interface NavContent {
 
 export interface Experience {
 	title: string;
+  company: string;
 	duration: string;
 	contributions: string[];
 	imageSource: string;

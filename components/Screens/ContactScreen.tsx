@@ -13,7 +13,7 @@ export const ContactScreen = () => {
         <Header chapter="04" title="Let's Connect!" />
 
         <div className="flex flex-col">
-          <p className="text-sm font-normal leading-8 text-secondaryDark dark:text-secondary">
+          <p className="text-xs font-normal leading-8 text-secondaryDark dark:text-secondary">
             If you&apos;re interested in discussing potential projects or
             opportunities, have any questions, or simply want to connect,
             don&apos;t hesitate to reach out! Thank you for visiting my

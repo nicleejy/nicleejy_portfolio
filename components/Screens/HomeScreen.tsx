@@ -27,7 +27,7 @@ export const HomeScreen = () => {
           <h3 className="text-xs md:text-lg font-semibold font-inconsolata dark:text-primary text-primaryDark md:mt-0 mt-14">
             Nice to meet you! I am
           </h3>
-          <h1 className="mt-6 text-4xl font-bold text-transparent md:text-7xl font-poppins bg-clip-text bg-gradient-to-r from-gradientLeft to-gradientRight">
+          <h1 className="mt-2 text-4xl font-bold text-transparent md:text-7xl font-poppins bg-clip-text bg-gradient-to-r from-gradientLeft to-gradientRight">
             Nicholas Lee.
           </h1>
 
@@ -50,24 +50,21 @@ export const HomeScreen = () => {
             repeat={Infinity}
           />
 
-          <p className="mt-12 text-xs md:text-sm font-normal leading-8 md:leading-8 text-secondaryDark dark:text-secondary">
+          <p className="mt-6 text-xs font-normal leading-8 text-secondaryDark dark:text-secondary">
             I am a computer science student at the National University of
             Singapore, pursuing my interest in full-stack web and mobile
             development. My passion lies in utilizing technology to not only
-            bring ideas to life through beautiful and efficient software, but to
+            bring ideas to life through well-designed, efficient software, but to
             also make a meaningful difference in people&apos;s lives.
           </p>
-          <Link
+          <a
             className="cursor-pointer w-fit mt-12"
-            to={"projects"}
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1200}
+            href={"https://read.cv/nicleejy"}
+            target="_blank"
+            rel="noreferrer"
           >
-            <BlueButton onClick={() => ""}>View Projects</BlueButton>
-          </Link>
-
+            <BlueButton onClick={() => ""}>View Resume</BlueButton>
+          </a>
           <div className="block sm:hidden">
             <MobileSocialLinks />
           </div>

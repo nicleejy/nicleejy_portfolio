@@ -13,8 +13,8 @@ export const ExperienceScreen = () => {
       className="flex items-center justify-center min-h-[100vh]"
     >
       <div className="flex flex-col w-[750px]">
-        <Header chapter="02" title="My Experiences" />
-        <div className="mt-12">
+        <Header chapter="02" title="My Experience" />
+        <div className="mt-4">
           <ol className="relative border-l dark:border-primary border-primaryDark border-opacity-30">
             {experiences.map((experience, index) => (
               <motion.div

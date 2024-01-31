@@ -29,9 +29,9 @@ const NavBar: FunctionComponent<{
     setDarkMode(isDarkMode);
   };
 
-  const toggleNavBar = (isOpen: boolean) => {
-    if (isOpen) {
-      document.body.classList.add(`overflow-hidden`);
+  const handleResize = () => {
+    if (window.innerWidth > 1024) {
+      setOpen(false);
     }
   };
 
@@ -57,11 +57,11 @@ const NavBar: FunctionComponent<{
         prev = window.scrollY;
       }
     };
-
     window.addEventListener("scroll", handleNavigation);
-
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleNavigation);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -144,7 +144,7 @@ const NavBar: FunctionComponent<{
               initial={{ x: "100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: "100%", opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
               className="lg:invisible absolute top-0 left-0 flex justify-center items-center w-full px-5 bg-white dark:bg-main h-[100vh] transition-colors duration-500"
             >
               <ul className="flex w-[100%]  flex-col items-center text-xl font-semibold gap-11 font-inconsolata">

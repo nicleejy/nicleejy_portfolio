@@ -15,7 +15,7 @@ const BlueButton: FunctionComponent<Props> = ({
     <div className="inline-block">
       <button
         onClick={() => onClick()}
-        className={`py-3 px-7 text-sm text-accent font-normal focus:outline-none rounded-lg border-2 border-accent hover:bg-accent  hover:text-secondary transition-all duration-200 ${className}`}
+        className={`py-3 px-7 text-sm text-accent font-normal focus:outline-none rounded-lg border-2 border-accent hover:bg-accent/30 transition-all dark:hover:text-secondary duration-200 ${className}`}
       >
         {children}
       </button>

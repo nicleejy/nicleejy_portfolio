@@ -78,7 +78,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
       animate={framerAnimation}
     >
       <h1
-        className="mt-12 mb-1 text-2xl font-bold text-primaryDark transition-all dark:text-primary hover:text-accent duration-300 dark:hover:text-accent cursor-pointer"
+        className="mt-4 mb-1 text-xl font-bold text-primaryDark transition-all dark:text-primary hover:text-accent duration-300 dark:hover:text-accent cursor-pointer"
         onClick={handleClickProject}
       >
         {name}
@@ -101,10 +101,9 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
           </p>
         </div>
       )}
-
-      <div className="relative px-6 py-10 mt-8 mb-24 md:mt-14 shadow-lg dark:bg-tertiary rounded-xl md:w-[630px]">
+      <div className="relative px-6 py-10 mt-8 mb-20 md:mt-8 shadow-lg dark:bg-tertiary rounded-xl md:w-[630px]">
         <div className="flex flex-col items-center">
-          <p className="mr-0 text-sm leading-7 list-disc lg:mr-32 text-secondaryDark dark:text-secondary ">
+          <p className="mr-0 text-xs leading-7 list-disc lg:mr-32 text-secondaryDark dark:text-secondary ">
             {description}
           </p>
 

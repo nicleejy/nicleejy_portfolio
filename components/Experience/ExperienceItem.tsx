@@ -7,6 +7,7 @@ import Image from "next/image";
 const ExperienceItem: FunctionComponent<{ experience: Experience }> = ({
   experience: {
     title,
+    company,
     duration,
     contributions,
     imageSource,
@@ -24,33 +25,35 @@ const ExperienceItem: FunctionComponent<{ experience: Experience }> = ({
       </span>
       <div className="ml-2 md:ml-10">
         <a href={website} target="_blank" rel="noreferrer">
-          <div className="flex items-center transition-all duration-300 group hover:translate-x-2">
+          <div className="flex items-center transition-all duration-300 group hover:translate-x-1">
             <Image
               className="object-contain"
               src={imageSource}
               alt={title}
-              width={50}
-              height={50}
+              width={82}
+              height={82}
             />
-
             <div className="ml-5">
-              <h3 className="flex items-center mb-1 text-xl font-bold text-primaryDark dark:text-primary group-hover:text-accent dark:group-hover:text-accent transition-all duration-300">
+              <h3 className="flex items-center text-xl font-bold text-primaryDark dark:text-primary transition-all duration-300">
                 {title}
               </h3>
-              <time className="block mt-2 text-lg leading-none font-inconsolata text-secondaryDark dark:text-secondary">
+              <h3 className="text-md font-inconsolata text-primaryDark dark:text-primary">
+                {company}
+              </h3>
+              <time className="block mt-4 text-md leading-none font-inconsolata text-secondaryDark dark:text-secondary">
                 {duration}
               </time>
             </div>
           </div>
         </a>
-        <ul className="mt-6 mb-6 ml-5 text-sm leading-7 list-disc text-secondaryDark dark:text-secondary">
+        <ul className="mt-6 mb-10 ml-5 text-xs leading-6 list-disc text-secondaryDark dark:text-secondary">
           {contributions.map((contribution, index) => (
             <li key={index} className="mt-4">
               {contribution}
             </li>
           ))}
         </ul>
-        <SkillRow className="mb-28" skillNames={skillsList} />
+        <SkillRow className="mb-20" skillNames={skillsList} />
       </div>
     </li>
   );

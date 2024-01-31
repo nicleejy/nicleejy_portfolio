@@ -40,12 +40,12 @@ export const FooterScreen = () => {
         href={"https://github.com/nicleejy/nicleejy_portfolio"}
         target="_blank"
         rel="noreferrer"
-        className="text-sm dark:text-secondary text-secondaryDark  hover:text-accent dark:hover:text-accent font-inconsolata hover:scale-105 transition-all"
+        className="text-xs dark:text-secondary text-secondaryDark  hover:text-accent dark:hover:text-accent font-inconsolata hover:scale-105 transition-all"
       >
         Designed and built by Nicholas Lee
       </a>
       <SkillRow
-        className="mt-6"
+        className="mt-6 mb-12"
         skillNames={["next", "typescript", "tailwind", "react"]}
       />
     </footer>
