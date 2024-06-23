@@ -1,33 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import Section from "../Utilities/Section";
 import Header from "../Utilities/Header";
-import ExperienceItem from "../Experience/ExperienceItem";
 import { experiences } from "../../data";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../../animations/animations";
+import ExperienceTabContent from "../Experience/ExperienceTabContent";
+import ExperienceTabBar from "../Experience/ExperienceTabBar";
 
 export const ExperienceScreen = () => {
+  const [selectedTab, setSelectedTab] = useState(0);
+  const selectedExperience = experiences[selectedTab];
   return (
     <Section
       id="experience"
       className="flex items-center justify-center min-h-[100vh]"
     >
-      <div className="flex flex-col w-[750px]">
-        <Header chapter="02" title="My Experience" />
+      <div className="flex flex-col min-w-0 max-w-[850px]">
+        <Header chapter="02" title="Experience" />
         <div className="mt-4">
-          <ol className="relative border-l dark:border-primary border-primaryDark border-opacity-30">
-            {experiences.map((experience, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                initial="initial"
-                whileInView="animate"
-                viewport={{ once: true }}
-              >
-                <ExperienceItem experience={experience} />
-              </motion.div>
-            ))}
-          </ol>
+          <div className="flex flex-col gap-8 lg:flex-row">
+            <ExperienceTabBar
+              experiences={experiences}
+              selectedTab={selectedTab}
+              setSelectedTab={setSelectedTab}
+            />
+            <ExperienceTabContent experience={selectedExperience} />
+          </div>
         </div>
       </div>
     </Section>

@@ -7,13 +7,14 @@ export interface NavContent {
 }
 
 export interface Experience {
-	title: string;
-  company: string;
-	duration: string;
-	contributions: string[];
-	imageSource: string;
-  skillsList: string[]
-  website: string
+	title: string,
+  company: string,
+	duration: string,
+	contributions: string[],
+	imageSource: string,
+  skillsList: string[],
+  website: string,
+  testimonialPath?: string
 }
 
 export interface Skill {
