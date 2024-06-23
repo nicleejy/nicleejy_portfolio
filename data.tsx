@@ -36,10 +36,21 @@ import {
 // import whereGotTimetable from "./public/wheregottimetable.json";
 // import evolve from "./public/evolve.json";
 
+export const introductionText =
+  "I am a final year computer science student at the National University of Singapore, pursuing my interest in full-stack web and mobile development. My passion lies in utilising technology to not only bring ideas to life through well-designed, efficient software, but to also make a meaningful difference in people's lives.";
+
+export const aboutText = [
+  "I'm passionate about for developing clean, effective technical solutions that make a positive impact.",
+  ,
+  "I thrive in fast-paced and collaborative team environments, bringing a keen eye for detail to every project I work on. In 2016, I also co-founded Advocado Films, where I honed my skills in content creation. My passion for visual storytelling has honed my eye for detail and my ability to create intuitive and user-friendly solutions.",
+  ,
+  "When I am not coding, I enjoy traveling, doing photography and videography, and looking for good food around Singapore.",
+];
+
 export const navContents: NavContent[] = [
-  { name: "./about", offset: 0, id: "about" },
   { name: "./experience", offset: -20, id: "experience" },
   { name: "./projects", offset: -50, id: "projects" },
+  { name: "./about", offset: 0, id: "about" },
   { name: "./contact", offset: 0, id: "contact" },
 ];
 
@@ -147,7 +158,7 @@ export const otherProjects: OtherProject[] = [
 export const experiences: Experience[] = [
   {
     title: "Software Engineer Intern",
-    duration: "September 2023 - November 2023",
+    duration: "May 2024 - August 2024",
     company: "Ernst & Young",
     imageSource: "/ey.png",
     contributions: [
