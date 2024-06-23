@@ -69,7 +69,7 @@ const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
             <div className="ml-5">
               <h3 className="flex flex-col items-start lg:flex-row lg:items-center text-xl font-bold text-primaryDark dark:text-primary transition-all duration-300">
                 {title}
-                <span className="dark:text-accent text-accent ml-2">
+                <span className="hidden lg:block dark:text-accent text-accent ml-2">
                   /&nbsp;
                   {company}
                 </span>
