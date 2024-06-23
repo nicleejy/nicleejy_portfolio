@@ -18,7 +18,7 @@ const SecondaryButton: FunctionComponent<SecondaryButtonProps> = ({
       onClick={onClick}
       className={`inline-block group cursor-pointer ${className} w-fit`}
     >
-      <div className="flex gap-2 items-center transition-all duration-300 font-inconsolata text-white text-sm group-hover:text-accent ">
+      <div className="text-primaryDark dark:text-primary flex gap-2 items-center transition-all duration-300 font-inconsolata  text-sm group-hover:text-accent ">
         {children}
         {icon && <span>{icon}</span>}
       </div>

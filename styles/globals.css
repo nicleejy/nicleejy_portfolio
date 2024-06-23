@@ -33,12 +33,12 @@ body {
 
 @layer components {
   .glow {
-      @apply text-white text-opacity-80;
+      @apply text-primary text-opacity-80;
       text-shadow: 0 0 4px #FFFFFF;
   }
 
   .animate-glow {
-      @apply text-white transition-all duration-300 hover:glow;
+      @apply text-primary transition-all duration-300 hover:glow;
   }
 
   .background {
