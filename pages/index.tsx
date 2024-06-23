@@ -12,8 +12,6 @@ import { ThemeProvider } from "../animations/themeContext";
 import { FooterScreen } from "../components/Screens/FooterScreen";
 import { HiChevronDoubleDown } from "react-icons/hi";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
-import { fadeInUp } from "../animations/animations";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +23,7 @@ const Home: NextPage = () => {
         <div>
           <Link
             className="cursor-pointer"
-            to={"about"}
+            to={"experience"}
             spy={true}
             smooth={true}
             offset={0}
@@ -39,14 +37,12 @@ const Home: NextPage = () => {
             </div>
           </Link>
         </div>
-
         <NavBar navigationContent={navContents} />
         <HomeScreen />
-        <AboutScreen />
         <ExperienceScreen />
         <FeaturedProjects />
         <OtherProjects />
-
+        <AboutScreen />
         <ContactScreen />
         <FooterScreen />
       </main>

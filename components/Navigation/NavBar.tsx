@@ -46,7 +46,7 @@ const NavBar: FunctionComponent<{
   useEffect(() => {
     var prev = window.scrollY;
     const handleNavigation = (e: Event) => {
-      if (window.scrollY < 160) {
+      if (window.scrollY < 200) {
         setIsRetracted(false);
       } else {
         if (prev > window.scrollY) {
@@ -73,7 +73,7 @@ const NavBar: FunctionComponent<{
         open: { opacity: 1, y: 0 },
         closed: { opacity: 0, y: "-100%" },
       }}
-      className="fixed flex bg-white dark:bg-main h-[11vh] items-center w-full z-40 transition-colors duration-500"
+      className="fixed flex bg-white dark:bg-main h-[11vh] items-center w-full z-40 transition-colors duration-500 shadow-md"
     >
       {/* Web Navbar */}
       <nav className="flex items-center justify-between w-[100%] mx-4">
@@ -86,7 +86,7 @@ const NavBar: FunctionComponent<{
           duration={1200}
         >
           {theme === "dark" ? (
-            <Image src="/nl.png" alt="logo" width={50} height={50} />
+            <Image src="/nl.png" alt="logo" width={35} height={35} />
           ) : (
             <Image
               className="rounded-xl"

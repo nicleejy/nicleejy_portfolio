@@ -5,6 +5,7 @@ import Section from "../Utilities/Section";
 import PrimaryButton from "../Utilities/PrimaryButton";
 import { Link } from "react-scroll";
 import { generateBubbles } from "../../animations/animations";
+import { introductionText } from "../../data";
 
 export const HomeScreen = () => {
   const BubbleBackground = () => {
@@ -30,7 +31,6 @@ export const HomeScreen = () => {
           <h1 className="mt-2 text-4xl font-bold text-transparent md:text-7xl font-poppins bg-clip-text bg-gradient-to-r from-gradientLeft to-gradientRight">
             Nicholas Lee.
           </h1>
-
           <TypeAnimation
             className="mt-2 text-lg font-bold text-primaryDark md:text-4xl dark:text-primary"
             sequence={[
@@ -40,22 +40,13 @@ export const HomeScreen = () => {
               2000,
               "I love bringing ideas to life with code",
               2000,
-              "I'm an aspiring software engineer",
-              2000,
-              "I enjoy solving complex problems",
-              2000,
             ]}
             wrapper="div"
             cursor={true}
             repeat={Infinity}
           />
-
           <p className="mt-6 text-xs font-normal leading-8 text-secondaryDark dark:text-secondary">
-            I am a computer science student at the National University of
-            Singapore, pursuing my interest in full-stack web and mobile
-            development. My passion lies in utilizing technology to not only
-            bring ideas to life through well-designed, efficient software, but
-            to also make a meaningful difference in people&apos;s lives.
+            {introductionText}
           </p>
           <Link
             className="cursor-pointer w-fit mt-12"
@@ -63,7 +54,7 @@ export const HomeScreen = () => {
             spy={true}
             smooth={true}
             offset={-50}
-            duration={2000}
+            duration={1500}
           >
             <PrimaryButton onClick={() => undefined}>
               View Projects

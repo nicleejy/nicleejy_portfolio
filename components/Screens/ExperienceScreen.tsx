@@ -14,7 +14,7 @@ export const ExperienceScreen = () => {
       className="flex items-center justify-center min-h-[100vh]"
     >
       <div className="flex flex-col min-w-0 max-w-[850px]">
-        <Header chapter="02" title="Experience" />
+        <Header chapter="01" title="Experience" />
         <div className="mt-4">
           <div className="flex flex-col gap-8 lg:flex-row">
             <ExperienceTabBar
