@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "../Utilities/Section";
 import Header from "../Utilities/Header";
-import BlueButton from "../Utilities/BlueButton";
+import PrimaryButton from "../Utilities/PrimaryButton";
 
 export const ContactScreen = () => {
   return (
@@ -19,12 +19,12 @@ export const ContactScreen = () => {
             don&apos;t hesitate to reach out! Thank you for visiting my
             portfolio :&#41;{" "}
           </p>
-          <BlueButton
+          <PrimaryButton
             className="mt-12"
             onClick={() => window.open("mailto:e0725400@u.nus.edu")}
           >
             Contact Me
-          </BlueButton>
+          </PrimaryButton>
         </div>
       </div>
     </Section>

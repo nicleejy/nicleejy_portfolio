@@ -27,8 +27,7 @@ const ProjectLinks: FunctionComponent<{
       {projectLink && (
         <a
           href={projectLink}
-          target="_blank"
-          rel="noreferrer"
+          target="projectTab"
           onClick={handleProjectLinkClick}
         >
           <FiExternalLink size={23} className={hoverStyle} />
@@ -38,8 +37,7 @@ const ProjectLinks: FunctionComponent<{
       {githubLink && (
         <a
           href={githubLink}
-          target="_blank"
-          rel="noreferrer"
+          target="githubTab"
           onClick={handleGithubLinkClick}
         >
           <SiGithub size={23} className={hoverStyle} />

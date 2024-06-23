@@ -25,18 +25,16 @@ const WebSocialLinks = () => {
     >
       <a
         href="https://www.instagram.com/leesvisuals/?hl=en"
-        target="_blank"
-        rel="noreferrer"
+        target="instagramTab"
       >
         <SiInstagram size={20} className={hoverStyle} />
       </a>
-      <a href="https://github.com/nicleejy" target="_blank" rel="noreferrer">
+      <a href="https://github.com/nicleejy" target="githubTab">
         <SiGithub size={20} className={hoverStyle} />
       </a>
       <a
         href="https://sg.linkedin.com/in/nicholasleejunyi"
-        target="_blank"
-        rel="noreferrer"
+        target="linkedinTab"
       >
         <SiLinkedin size={20} className={hoverStyle} />
       </a>

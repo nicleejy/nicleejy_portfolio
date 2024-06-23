@@ -56,9 +56,9 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     if (projectLink != null) {
-      window.open(projectLink, "_blank");
+      window.open(projectLink, "projectTab");
     } else {
-      window.open(githubLink, "_blank");
+      window.open(githubLink, "githubTab");
     }
   };
 
@@ -66,7 +66,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
     e: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     if (award && award.link != null) {
-      window.open(award.link, "_blank");
+      window.open(award.link, "awardTab");
     }
   };
 

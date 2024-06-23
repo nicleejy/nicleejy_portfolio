@@ -30,7 +30,7 @@ export const AboutScreen = () => {
             detail and my ability to create intuitive and user-friendly
             solutions.
             <br></br>
-            <br></br>When I'm not coding, I enjoy traveling, doing photography
+            <br></br>When I am not coding, I enjoy traveling, doing photography
             and videography, and looking for good food around Singapore.
           </p>
 

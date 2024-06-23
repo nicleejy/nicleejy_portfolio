@@ -38,8 +38,7 @@ export const FooterScreen = () => {
 
       <a
         href={"https://github.com/nicleejy/nicleejy_portfolio"}
-        target="_blank"
-        rel="noreferrer"
+        target="githubTab"
         className="text-xs dark:text-secondary text-secondaryDark  hover:text-accent dark:hover:text-accent font-inconsolata hover:scale-105 transition-all"
       >
         Designed and built by Nicholas Lee
