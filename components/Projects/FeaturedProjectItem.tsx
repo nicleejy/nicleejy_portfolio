@@ -88,7 +88,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
       </h3>
       {award && (
         <div
-          className="flex items-center p-3 mt-6 transition-all duration-300 w-fit text-sm font-inconsolata text-primary hover:scale-105 cursor-pointer"
+          className="flex items-center p-4 mt-6 transition-all duration-300 w-fit text-sm font-inconsolata text-primary cursor-pointer rounded-lg hover:bg-accent/10"
           onClick={handleClickAward}
         >
           <FaMedal className="text-accent" size={30} />

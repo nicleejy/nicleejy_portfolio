@@ -89,19 +89,19 @@ const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
         </ul>
       </motion.div>
       <div className="flex flex-col gap-8 lg:flex-row lg:items-center w-full">
-        {skillsList.length !== 0 && (
-          <motion.div animate={skillRowControls}>
-            <SkillRow skillNames={skillsList} />
-          </motion.div>
-        )}
         {testimonialPath && (
           <SecondaryButton
-            className="lg:ml-auto"
+            className="lg:mr-auto"
             icon={<FiExternalLink size={18} />}
             onClick={onTestimonialClick}
           >
             View Testimonial
           </SecondaryButton>
+        )}
+        {skillsList.length !== 0 && (
+          <motion.div animate={skillRowControls}>
+            <SkillRow skillNames={skillsList} />
+          </motion.div>
         )}
       </div>
     </div>
