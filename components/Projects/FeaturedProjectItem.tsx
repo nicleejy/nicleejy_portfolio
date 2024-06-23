@@ -44,7 +44,7 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
   });
 
   const framerAnimation = useAnimation();
-  const [ref, inView, entry] = useInView({ threshold: 0.5 });
+  const [ref, inView, entry] = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     if (inView) {
