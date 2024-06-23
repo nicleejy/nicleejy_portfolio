@@ -114,7 +114,7 @@ export const otherProjects: OtherProject[] = [
     githubLink: "https://github.com/nicleejy/ip",
     projectLink: "https://nicleejy.github.io/ip/",
     technologies: ["java", "junit", "gradle"],
-    imagePath: "/uwu.png",
+    imagePath: "/uwu.jpg",
   },
   {
     name: "NodeFlair Site Replica",
@@ -123,7 +123,7 @@ export const otherProjects: OtherProject[] = [
     githubLink: "https://github.com/nicleejy/NodeFlairSiteReplica",
     projectLink: "https://nodeflair-task-one.vercel.app/",
     technologies: ["react", "tailwind", "typescript"],
-    imagePath: "/nodeflair.png",
+    imagePath: "/nodeflair.jpg",
   },
   {
     name: "Flight Tracker",
@@ -131,7 +131,7 @@ export const otherProjects: OtherProject[] = [
       "Tool written in Node.js for tracking and monitoring airline flight prices, as part of a larger ongoing passion project.",
     githubLink: "https://github.com/nicleejy/FlightTracker",
     technologies: ["node"],
-    imagePath: "/flighttracker.png",
+    imagePath: "/flighttracker.jpg",
   },
   {
     name: "Don't Forget Ah!",
@@ -140,7 +140,7 @@ export const otherProjects: OtherProject[] = [
     githubLink: "https://github.com/nicleejy/DontForgetAh-Bot",
     projectLink: "https://telegram.me/DontForgetAhBot",
     technologies: ["python"],
-    imagePath: "/dontforgetah.png",
+    imagePath: "/dontforgetah.jpg",
   },
 ];
 
