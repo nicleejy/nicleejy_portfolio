@@ -28,6 +28,8 @@ import {
   SiRedux,
   SiDocker,
   SiMui,
+  SiWebpack,
+  SiSass,
 } from "react-icons/si";
 
 import singaScript from "./public/singascript.json";
@@ -37,7 +39,7 @@ import evolve from "./public/evolve.json";
 export const navContents: NavContent[] = [
   { name: "./about", offset: 0, id: "about" },
   { name: "./experience", offset: -20, id: "experience" },
-  { name: "./projects", offset: 0, id: "projects" },
+  { name: "./projects", offset: -50, id: "projects" },
   { name: "./contact", offset: 0, id: "contact" },
 ];
 
@@ -144,39 +146,45 @@ export const otherProjects: OtherProject[] = [
 
 export const experiences: Experience[] = [
   {
+    title: "Software Engineer Intern",
+    duration: "September 2023 - November 2023",
+    company: "Ernst & Young",
+    imageSource: "/ey.png",
+    contributions: [
+      "Developed user-facing features for an e-service portal using React.js, TypeScript, and SCSS within a microfrontend architecture and write unit tests with React Testing Library and Jest",
+      "Built reusable components and libraries, optimised for maximum performance and scalability across various browsers",
+      "Collaborated with cross-functional teams to define, design, and ensure technical feasibility of UI/UX designs",
+    ],
+    skillsList: ["react", "typescript", "sass", "webpack"],
+    website: "https://www.ey.com/en_sg",
+  },
+  {
     title: "Product Management Intern",
     duration: "September 2023 - November 2023",
     company: "Shopee",
     imageSource: "/shopee.png",
     contributions: [
-      "Led development of an AI-based product solution leveraging computer vision models to identify and remove violating items on the Shopee platform as part of the Listing QC team",
-      "Collaborated with cross-functional teams, including Regional Ops, UI/UX Designers, Software Engineers, and Data Scientists to enhance consumer satisfaction and platform cleanliness",
-      "Presented PRD during multiple reviews, articulating launch roadmap, technical specs and performance metrics to stakeholders",
+      "Led development of AI-based product solution as part of Listing QC team leveraging computer vision models to identify and remove violating products on Shopee platform",
+      "Collaborated with Regulatory Operations, UI/UX designers, software engineers, and data science teams to implement strategies for enhancing platform cleanliness",
+      "Created and presented PRDs to numerous cross-functional teams stakeholders, specifying roadmap, technical specifications and performance metrics",
     ],
     skillsList: [],
     website: "https://shopee.sg/",
+    testimonialPath: "shopee_testimonial.pdf",
   },
   {
     title: "Software Engineer Intern",
     duration: "May 2023 - August 2023",
-    company: "Hyundai Motor Group (HMGICS)",
+    company: "Hyundai Motor Group",
     imageSource: "/hmgics.png",
     contributions: [
-      "Developed a MERN stack-based computer vision data visualisation tool for Hyundai's AI Research centre, covering wireframing, UI design, and full-stack implementation with Redux and Typescript, utilising Docker for containerization and streamlined deployment on Kubernetes-based infrastructure",
-      "Designed a microservices architecture following Clean Architecture principles for easy integration across CV/ML applications",
-      "Achieved sub-100ms API response time, reducing data latency by 80% through server-side seg-mask decoding with LRU cache",
-      "Conducted research on WINClip applications, including zero-shot anomaly detection in manufacturing of the Ioniq 5 Electric Vehicle",
+      "Architected a full-stack computer vision data visualisation tool for Hyundai's AI Research centre with Next.js, Express.js and MongoDB, utilising Docker for deployment on Kubernetes-based infrastructure",
+      "Adopted microservices architecture following clean architecture principles for integration across various CV/ML applications",
+      "Reduced API response data latency by 80% through server-side segmentation-mask decoding with LRU cache",
     ],
-    skillsList: [
-      "next",
-      "react",
-      "express",
-      "typescript",
-      "mongo",
-      "docker",
-      "mui",
-    ],
+    skillsList: ["next", "express", "typescript", "mongo", "docker", "mui"],
     website: "https://www.hyundai.com/sg/home",
+    testimonialPath: "hyundai_testimonial.pdf",
   },
   {
     title: "Software Engineer Intern",
@@ -184,9 +192,9 @@ export const experiences: Experience[] = [
     duration: "May 2022 - August 2022",
     imageSource: "/quest.png",
     contributions: [
-      "Developed mobile interfaces using Flutter SDK with Dart, integrating features such as user profile and hero earning analytics",
-      "Migrated app database from Cloud Firestore to PostgreSQL with Hasura and GraphQL by mapping complex data relationships, resulting in 60% reduction in query response time",
-      "Implemented robust stream-based state management system utilising Business Logic Component (BLoC) to ensure code maintainability and scalability",
+      "Developed mobile interfaces with Flutter SDK and Dart, implemented new features such as Profile and Earning Analytics",
+      "Map complex data relationships and migrate app database from Cloud Firestore to PostgreSQL with Hasura and GraphQL, reducing query response time by up to 60%",
+      "Implemented robust BLoC stream-based state management system across components for code maintainability",
     ],
     skillsList: ["flutter", "firebase", "hasura", "graphql", "postgresql"],
     website: "https://quest-inc.co",
@@ -214,6 +222,7 @@ export const skills: { [key: string]: Skill } = {
   dart: { name: "Dart", Icon: SiDart },
   html: { name: "HTML", Icon: SiHtml5 },
   css: { name: "CSS", Icon: SiCss3 },
+  sass: { name: "Sass", Icon: SiSass },
   react: { name: "React", Icon: SiReact },
   next: { name: "Next.js", Icon: SiNextdotjs },
   node: { name: "Node.js", Icon: FaNodeJs },
@@ -238,4 +247,5 @@ export const skills: { [key: string]: Skill } = {
   redux: { name: "Redux", Icon: SiRedux },
   docker: { name: "Docker", Icon: SiDocker },
   mui: { name: "Material UI", Icon: SiMui },
+  webpack: { name: "Webpack", Icon: SiWebpack },
 };
