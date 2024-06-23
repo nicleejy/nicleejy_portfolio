@@ -60,6 +60,7 @@ const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
         <a href={website} target="companyTab">
           <div className="flex items-center transition-all duration-300 hover:translate-x-2">
             <Image
+              priority={true}
               className="object-contain"
               src={imageSource}
               alt={title}
