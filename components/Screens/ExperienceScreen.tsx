@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Section from "../Utilities/Section";
 import Header from "../Utilities/Header";
 import { experiences } from "../../data";
-import { motion } from "framer-motion";
-import { fadeInUp } from "../../animations/animations";
 import ExperienceTabContent from "../Experience/ExperienceTabContent";
 import ExperienceTabBar from "../Experience/ExperienceTabBar";
 

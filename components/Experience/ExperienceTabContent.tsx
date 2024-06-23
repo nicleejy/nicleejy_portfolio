@@ -1,10 +1,9 @@
-import React, { FunctionComponent, useEffect, useRef, useState } from "react";
-import { BiCodeAlt } from "react-icons/bi";
+import React, { FunctionComponent, useEffect } from "react";
 import { Experience } from "../../types";
 import SkillRow from "../Skills/SkillRow";
 import Image from "next/image";
 import { FiExternalLink } from "react-icons/fi";
-import { animate, motion, useAnimationControls } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import SecondaryButton from "../Utilities/SecondaryButton";
 
 const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
