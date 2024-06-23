@@ -1,12 +1,12 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, ReactNode } from "react";
 
-interface Props {
-  children: React.ReactNode;
+interface PrimaryButtonProps {
+  children: ReactNode;
   className?: string;
-  onClick: Function;
+  onClick: () => void;
 }
 
-const BlueButton: FunctionComponent<Props> = ({
+const PrimaryButton: FunctionComponent<PrimaryButtonProps> = ({
   children,
   className,
   onClick,
@@ -14,7 +14,7 @@ const BlueButton: FunctionComponent<Props> = ({
   return (
     <div className="inline-block">
       <button
-        onClick={() => onClick()}
+        onClick={onClick}
         className={`py-3 px-7 text-sm text-accent font-normal focus:outline-none rounded-lg border-2 border-accent hover:bg-accent/30 transition-all dark:hover:text-secondary duration-200 ${className}`}
       >
         {children}
@@ -23,4 +23,4 @@ const BlueButton: FunctionComponent<Props> = ({
   );
 };
 
-export default BlueButton;
+export default PrimaryButton;

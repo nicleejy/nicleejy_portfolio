@@ -2,7 +2,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import MobileSocialLinks from "../Socials/MobileSocialLinks";
 import Section from "../Utilities/Section";
-import BlueButton from "../Utilities/BlueButton";
+import PrimaryButton from "../Utilities/PrimaryButton";
 import { Link } from "react-scroll";
 import { generateBubbles } from "../../animations/animations";
 
@@ -54,17 +54,21 @@ export const HomeScreen = () => {
             I am a computer science student at the National University of
             Singapore, pursuing my interest in full-stack web and mobile
             development. My passion lies in utilizing technology to not only
-            bring ideas to life through well-designed, efficient software, but to
-            also make a meaningful difference in people&apos;s lives.
+            bring ideas to life through well-designed, efficient software, but
+            to also make a meaningful difference in people&apos;s lives.
           </p>
-          <a
+          <Link
             className="cursor-pointer w-fit mt-12"
-            href={"https://read.cv/nicleejy"}
-            target="_blank"
-            rel="noreferrer"
+            to={"projects"}
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={2000}
           >
-            <BlueButton onClick={() => ""}>View Resume</BlueButton>
-          </a>
+            <PrimaryButton onClick={() => undefined}>
+              View Projects
+            </PrimaryButton>
+          </Link>
           <div className="block sm:hidden">
             <MobileSocialLinks />
           </div>
