@@ -32,9 +32,9 @@ import {
   SiSass,
 } from "react-icons/si";
 
-import singaScript from "./public/singascript.json";
-import whereGotTimetable from "./public/wheregottimetable.json";
-import evolve from "./public/evolve.json";
+// import singaScript from "./public/singascript.json";
+// import whereGotTimetable from "./public/wheregottimetable.json";
+// import evolve from "./public/evolve.json";
 
 export const navContents: NavContent[] = [
   { name: "./about", offset: 0, id: "about" },
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Guo-KeCheng/singaScript/",
     projectLink: "http://singa-script.vercel.app",
     technologies: ["next", "express", "typescript", "tailwind", "heroku"],
-    animation: singaScript,
+    // animation: singaScript,
     imagePath: "/singascript.png",
     award: {
       name: "Most Beautiful Hack",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       "Evolve was created to help users track their daily routines, predict their wellbeing and identify bad habits through regression analysis. Built using Flutter SDK with Firebase and Flask. A Depth-First-Search algorithm was implemented using Python and Scikit-learn to identify associations and make reliable predictions.",
     projectLink: "https://linktr.ee/discretetech",
     technologies: ["flutter", "firebase", "python", "flask", "figma"],
-    animation: evolve,
+    // animation: evolve,
     imagePath: "/evolve.png",
     award: {
       name: "Judges Choice",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     githubLink: "https://github.com/nicleejy/Where-Got-TimeTable",
     projectLink: "https://where-got-time-table.herokuapp.com/",
     technologies: ["python", "html", "heroku", "flask"],
-    animation: whereGotTimetable,
+    // animation: whereGotTimetable,
     imagePath: "/wheregottimetable.png",
   },
 ];

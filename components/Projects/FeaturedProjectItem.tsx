@@ -106,9 +106,9 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
           <p className="mr-0 text-xs leading-7 list-disc lg:mr-32 text-secondaryDark dark:text-secondary ">
             {description}
           </p>
-          {/* <div className="hidden lg:absolute lg:block lg:-right-1/2 lg:-top-44 lg:left-auto lg:bottom-auto">
+          {/* {animation && <div className="hidden lg:absolute lg:block lg:-right-1/2 lg:-top-44 lg:left-auto lg:bottom-auto">
             {Animation}
-          </div> */}
+          </div>} */}
           <Image
             // className='my-10 lg:hidden'
             className="my-10 lg:absolute lg:block lg:-right-1/2 lg:-top-40 lg:left-auto lg:bottom-auto"

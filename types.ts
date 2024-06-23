@@ -29,7 +29,7 @@ export interface Project {
   technologies: string[],
   projectLink?: string,
   githubLink?:string,
-  animation:Object,
+  animation?:Object,
   imagePath:string,
   award?:Award
 }
