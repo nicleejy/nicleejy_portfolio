@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 ::-webkit-scrollbar-thumb {
   background: #6424F3;
   border-radius: 50px;
@@ -29,7 +30,7 @@ body {
 }
 
 .dark {
-  background: #FFFFFF;
+  background: #110125;
 }
 
 ::-webkit-scrollbar-track {
@@ -55,6 +56,7 @@ body {
     top: 0;
     left: 0;
   }
+
 
   .bubbles {
     position: relative;
@@ -96,6 +98,8 @@ body {
       filter: blur(50px);
       scale: 0;
     }
+    
   }
+
 }
 
