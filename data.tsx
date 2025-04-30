@@ -41,7 +41,7 @@ export const introductionText =
   "I am a final year computer science student at the National University of Singapore, pursuing my interest in full-stack web and mobile development. My passion lies in utilising technology to not only bring ideas to life through well-designed, efficient software, but to also make a meaningful difference in people's lives.";
 
 export const aboutText = [
-  "I'm passionate about for developing clean, effective technical solutions that make a positive impact.",
+  "I'm passionate about developing clean, effective technical solutions that make a positive impact.",
   ,
   "I thrive in fast-paced and collaborative team environments, bringing a keen eye for detail to every project I work on. In 2016, I also co-founded Advocado Films, where I honed my skills in content creation. My passion for visual storytelling has honed my eye for detail and my ability to create intuitive and user-friendly solutions.",
   ,
