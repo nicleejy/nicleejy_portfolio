@@ -30,6 +30,7 @@ import {
   SiMui,
   SiWebpack,
   SiSass,
+  SiSpring,
 } from "react-icons/si";
 
 // import singaScript from "./public/singascript.json";
@@ -56,13 +57,39 @@ export const navContents: NavContent[] = [
 
 export const projects: Project[] = [
   {
+    name: "SeeQLancer",
+    subheader: "Web interface for triaging and managing DBMS bugs",
+    description:
+      "SeeQLancer is a web application built with a React TypeScript frontend and a Spring Boot backend using Hibernate ORM. It supports real-time backend communication with SQLancer via webSockets and enables users to customise and run tests on multiple DBMSs (e.g. PostgreSQL, H2, DuckDB), categorise detected bugs, and re-execute queries in an integrated SQL playground.",
+    projectLink:
+      "https://www.canva.com/design/DAGkRqevHfQ/lHVp9FP8f5jBV6xfLQndFA/view?utm_content=DAGkRqevHfQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6ab0d6407a",
+    technologies: [
+      "next",
+      "react",
+      "spring",
+      "typescript",
+      "mui",
+      "postgresql",
+    ],
+    imagePath: "/seeqlancer.png",
+  },
+  {
+    name: "Trivia Game",
+    subheader:
+      "A customisable, interactive trivia game designed for organisations",
+    description:
+      "An interactive trivia platform developed for a client, built with Next.js and Express. It enables organisations to create and manage multiple quizzes with custom questions, branding, and results tracking. Each quiz is accessible via a unique link.",
+    technologies: ["next", "react", "typescript", "express", "postgresql"],
+    imagePath: "/trivia.png",
+  },
+  {
     name: "SingaScript by SGStudioCode",
     subheader: "Custom Singlish Esolang and Gamified IDE",
     description:
       "SingaScript is a custom Singlish Esolang interpreter and development environment designed to make programming more fun and relatable to Singaporeans and those interested in Singaporean culture and language.",
     githubLink: "https://github.com/Guo-KeCheng/singaScript/",
     projectLink: "http://singa-script.vercel.app",
-    technologies: ["next", "express", "typescript", "tailwind", "heroku"],
+    technologies: ["react", "express", "typescript", "tailwind", "heroku"],
     // animation: singaScript,
     imagePath: "/singascript.png",
     award: {
@@ -259,4 +286,5 @@ export const skills: { [key: string]: Skill } = {
   docker: { name: "Docker", Icon: SiDocker },
   mui: { name: "Material UI", Icon: SiMui },
   webpack: { name: "Webpack", Icon: SiWebpack },
+  spring: { name: "Spring Boot", Icon: SiSpring },
 };
