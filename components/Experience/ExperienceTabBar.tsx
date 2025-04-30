@@ -13,7 +13,7 @@ const ExperienceTabBar: FunctionComponent<ExperienceTabBarProps> = ({
 }) => {
   return (
     <>
-      <div className="flex relative flex-row lg:flex-col h-fit overflow-x-scroll">
+      <div className="flex relative flex-row lg:flex-col h-fit overflow-x-scroll no-scrollbar">
         {experiences.map((experience, index) => (
           <div
             key={index}
