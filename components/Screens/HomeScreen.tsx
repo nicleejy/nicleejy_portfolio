@@ -34,11 +34,13 @@ export const HomeScreen = () => {
           <TypeAnimation
             className="mt-2 text-lg font-bold text-primaryDark md:text-4xl dark:text-primary"
             sequence={[
-              "I build web applications",
+              "I build web apps",
               2000,
-              "I build mobile applications",
+              "I build mobile apps",
               2000,
-              "I love bringing ideas to life with code",
+              "I design user-friendly software",
+              2000,
+              "I love bringing ideas to life",
               2000,
             ]}
             wrapper="div"

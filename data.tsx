@@ -38,7 +38,7 @@ import {
 // import evolve from "./public/evolve.json";
 
 export const introductionText =
-  "I am a final year computer science student at the National University of Singapore, pursuing my interest in full-stack web and mobile development. My passion lies in utilising technology to not only bring ideas to life through well-designed, efficient software, but to also make a meaningful difference in people's lives.";
+  "With experience in both product management and software development, I'm able to bridge the gap between business and technology. My strengths lie in translating user needs into well-designed solutions, working across the entire product lifecycle from conception to development and launch.";
 
 export const aboutText = [
   "I'm passionate about developing clean, effective technical solutions that make a positive impact.",

@@ -2,7 +2,6 @@ import React, { FunctionComponent, useEffect } from "react";
 import { Project } from "../../types";
 import ProjectLinks from "./ProjectLinks";
 import SkillRow from "../Skills/SkillRow";
-import { useLottie, useLottieInteractivity } from "lottie-react";
 import { FaMedal } from "react-icons/fa";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -30,18 +29,18 @@ const FeaturedProjectItem: FunctionComponent<{ project: Project }> = ({
     animationData: animation,
   };
 
-  const lottieObj = useLottie(options, style);
-  const Animation = useLottieInteractivity({
-    lottieObj,
-    mode: "scroll",
-    actions: [
-      {
-        visibility: [0.2, 0.7],
-        type: "seek",
-        frames: [0, 14],
-      },
-    ],
-  });
+  // const lottieObj = useLottie(options, style);
+  // const Animation = useLottieInteractivity({
+  //   lottieObj,
+  //   mode: "scroll",
+  //   actions: [
+  //     {
+  //       visibility: [0.2, 0.7],
+  //       type: "seek",
+  //       frames: [0, 14],
+  //     },
+  //   ],
+  // });
 
   const framerAnimation = useAnimation();
   const [ref, inView, entry] = useInView({ threshold: 0.2 });

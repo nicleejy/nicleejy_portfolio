@@ -31,7 +31,7 @@ const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
           skillRowControls.start({
             opacity: 1,
             y: 0,
-            transition: { ease: "easeInOut", duration: 0.5 },
+            transition: { ease: "easeInOut", duration: 0.7 },
           });
         });
     };
@@ -42,7 +42,7 @@ const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
         .then(() => {
           contentControls.start({
             opacity: 1,
-            transition: { ease: "easeInOut", duration: 0.7 },
+            transition: { ease: "easeInOut", duration: 1 },
           });
         });
     };
@@ -55,23 +55,20 @@ const ExperienceTabContent: FunctionComponent<{ experience: Experience }> = ({
   };
 
   return (
-    <div className="lg:w-8/12 min-h-[380px] flex flex-col justify-between">
+    <div className="lg:w-9/12 min-h-[380px] flex flex-col justify-between">
       <motion.div animate={contentControls}>
         <a href={website} target="companyTab">
           <div className="flex items-center transition-all duration-300 hover:translate-x-2">
-            <Image
-              priority={true}
-              className="object-contain"
+            <img
+              className="object-contain w-[50px] h-[50px]"
               src={imageSource}
               alt={title}
-              width={50}
-              height={50}
             />
             <div className="ml-5">
               <h3 className="flex flex-col items-start lg:flex-row lg:items-center text-xl font-bold text-primaryDark dark:text-primary transition-all duration-300">
                 {title}
-                <span className="hidden lg:block dark:text-accent text-accent ml-2">
-                  /&nbsp;
+                <span className="hidden lg:block ml-2">
+                  @&nbsp;
                   {company}
                 </span>
               </h3>
