@@ -41,13 +41,13 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Script>
       <NextSeo
         title="Nicholas Lee Jun Yi - Software Engineer"
-        description="I am a computer science student at the National University of Singapore, pursuing my interest in full-stack web and mobile development. My passion lies in utilizing technology to not only bring ideas to life through beautiful and efficient software, but to also make a meaningful difference in people's lives."
+        description="With experience in both product management and software development, I'm able to bridge the gap between business and technology. My strengths lie in translating user needs into well-designed solutions, working across the entire product lifecycle from conception to development and launch."
         canonical="https://nicholaslee.dev/"
         openGraph={{
           url: "https://nicholaslee.dev/",
           title: "Nicholas Lee Jun Yi - Software Engineer",
           description:
-            "I am a computer science student at the National University of Singapore, pursuing my interest in full-stack web and mobile development. My passion lies in utilizing technology to not only bring ideas to life through beautiful and efficient software, but to also make a meaningful difference in people's lives.",
+            "With experience in both product management and software development, I'm able to bridge the gap between business and technology. My strengths lie in translating user needs into well-designed solutions, working across the entire product lifecycle from conception to development and launch.",
           images: [
             {
               url: "https://www.nicholaslee.dev/nldark.png",
